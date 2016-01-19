@@ -5,11 +5,9 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Ask a Williams Trustee</title>
+	<title>Eight + Four Campaign/title>
 
-	<!-- Custom Fonts -->
-<!-- 	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
- -->	<link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 </head>
 
@@ -17,9 +15,10 @@
 
 	{{> navbar}}
 
-	{{> ask}}
+	{{> intro}}
+	{{> proposal}}
+	{{> endorsements}}
 	{{> vote}}
-	{{> about}}
 
 	<!-- Plugin JavaScript -->
 	<script src="js/jquery.easing.min.js"></script>
@@ -30,14 +29,14 @@
 </body>
 
 <template name="navbar">
-	<nav class="navbar navbar-custom navbar-fixed-top hidden-xs" role="navigation">
-		<div class="container">
+	<nav class="navbar navbar-custom navbar-fixed-top hidden-xs" role="navigation" id="#navigation">
+		<div class="container" id="nav">
 
 			<div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
+                <a class="navbar-brand page-scroll" href="#intro">
                     <i class="fa fa-table"></i>  <span class="light">Eight + Four </span> Campaign
                 </a>
             </div>
@@ -45,13 +44,13 @@
 			<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
 				<ul class="nav navbar-nav">
 					<li>
-						<a class="page-scroll" href="#ask">Ask</a>
+						<a class="page-scroll" href="#proposal">Proposal</a>
+					</li>
+					<li>
+						<a class="page-scroll" href="#endorsements">Endorsements</a>
 					</li>
 					<li>
 						<a class="page-scroll" href="#vote">Vote</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#about">About</a>
 					</li>
 				</ul>
 			</div>
@@ -59,16 +58,13 @@
 	</nav>
 </template>
 
-<template name="ask">
-	<section id="ask" class="container content-section text-center">
+<template name="intro">
+	<section id="intro" class="container content-section text-center">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2">
-				<h1 class="brand-heading">Fix the Williams Academic Honor Code</h1>
-				<p class="ask-text">Something about the upcoming meeting<br>should go here.</p>
-				<form class="new-question">
-					<input type="text" name="text" placeholder="I'd like to know about ..." />
-				</form>
-				<a href="#vote" class="btn btn-circle page-scroll hidden-xs">
+				<h1 class="brand-heading">Fix the Honor Code</h1>
+				<p class="intro-text">Something about the upcoming meeting<br>should go here.</p>
+				<a href="#proposal" class="btn btn-circle page-scroll hidden-xs">
 					<i class="fa fa-angle-double-down animated"></i>
 				</a>
 			</div>
@@ -76,45 +72,65 @@
 	</section>
 </template>
 
-<template name="vote">
-	<section id="vote" class="container content-section text-center">
+<template name="proposal">
+	<section id="proposal" class="container content-section text-center">
 		<div class="row">
 			<div class="container">
 				<div class="col-xs-6">
 
 					<h2 class="sub-header">Popular</h2>
 
-<!-- 					{{> reactiveTable collection=popular settings=popularSettings}}
- -->
 				</div>
 				<div class="col-xs-6">
 					<h2 class="sub-header">Recent</h2>
 
-<!-- 					{{> reactiveTable collection=recent settings=recentSettings}}
- -->
 				</div>
 			</div>
-			<div class="container">
-
-			</div>
-			<a href="#about" class="btn btn-circle page-scroll blackButton hidden-xs">
+			<a href="#endorsements" class="btn btn-circle page-scroll blackButton hidden-xs">
 				<i class="fa fa-angle-double-down animated"></i>
 			</a>
 		</div>
 	</section>
 </template>
 
-<template name="about">
-	<section id="about" class="content-section text-center">
+<template name="endorsements">
+	<section id="endorsements" class="container content-section text-center">
+		<div class="row">
+			<div class="container">
+				<div class="col-xs-6">
+
+					<h2 class="sub-header">Popular</h2>
+
+				</div>
+				<div class="col-xs-6">
+					<h2 class="sub-header">Recent</h2>
+
+				</div>
+			</div>
+			<div class="container">
+
+			</div>
+			<a href="#vote" class="btn btn-circle page-scroll blackButton hidden-xs">
+				<i class="fa fa-angle-double-down animated"></i>
+			</a>
+		</div>
+	</section>
+</template>
+
+<template name="vote">
+	<section id="vote" class="content-section text-center">
 		<div class="about-section">
 			<div class="container">
 				<div class="col-lg-8 col-lg-offset-2">
-				<a href="#vote" class="btn btn-circle page-scroll blackButton hidden-xs">
+				<a href="#endorsements" class="btn btn-circle page-scroll blackButton hidden-xs">
 						<i class="fa fa-angle-double-up animated"></i>
 				</a>
 					<h2>About</h2>
 					<p>This is where stuff about it would go</p>
 					<a href="http://williamsrecord.com/" target="_blank" class="btn btn-default btn-lg">Read this</a>
+					<form class="new-question">
+					<input type="text" name="text" placeholder="I'd like to know about ..." />
+				</form>
 				</div>
 			</div>
 		</div>
