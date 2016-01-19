@@ -6,6 +6,11 @@ var addUpvoteButton = function (value) {
 
 if (Meteor.isClient) {
 
+  $(document).ready(function(){
+    document.body.addEventListener('touchstart', function(e){ e.preventDefault(); });
+
+  });
+
   Template.vote.helpers({
     popular: function () {
       return Questions.find({}) || [];
