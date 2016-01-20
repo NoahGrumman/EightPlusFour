@@ -12,6 +12,15 @@
 
 	<link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-72640611-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
 </head>
 
 <body>
@@ -96,6 +105,7 @@
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
         <p><a href="#endorsements" class="btn btn-circle page-scroll">
 		<i class="fa fa-angle-double-down animated"></i></a>
 		</p><p class="btn-circle-text">See who's endorsed it</p>
@@ -106,25 +116,30 @@
             <div class="carousel-caption">
               <h1>An exponential increase in Honor Code violations</h1>
               <p>We should maybe put a graph here. Might be space concerns, though, so consider hiding it for xs/sm though.</p>
-              <p><a class="btn btn-lg btn-default" href="#" role="button">See the 2014/15 Honor Code Report</a></p>
             </div>
           </div>
         </div>
         <div class="item">
           <div class="container">
             <div class="carousel-caption">
-              <h1>An exponential increase in Honor Code violations</h1>
-              <p>We should maybe put a graph here. Might be space concerns, though, so consider hiding it for xs/sm though.</p>
-              <p><a class="btn btn-lg btn-default" href="#" role="button">See the 2014/15 Honor Code Report</a></p>
+              <h1>Increased Transparency</h1>
+              <p>What do we put here?</p>
             </div>
           </div>
         </div>
         <div class="item">
           <div class="container">
             <div class="carousel-caption">
-              <h1>An exponential increase in Honor Code violations</h1>
+              <h1>A Jury Of Your Peers</h1>
+              <p>And here?</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Summary</h1>
               <p>We should maybe put a graph here. Might be space concerns, though, so consider hiding it for xs/sm though.</p>
-              <p><a class="btn btn-lg btn-default" href="#" role="button">See the 2014/15 Honor Code Report</a></p>
             </div>
           </div>
         </div>
@@ -143,34 +158,28 @@
 </template>
 
 <template name="endorsements">
-	<section id="endorsements" class="container content-section text-center">
-			<div class="row">
+	<section id="endorsements" class="container content-section">
+		<div class="row hidden-sm hidden-xs hidden-md">
         <div class="col-lg-4">
-          <img class="img-circle" src="img/circle-placeholder.png" alt="Generic placeholder image" width="140" height="140">
-          <h2>Marcus Christian '16</h2>
-          <p>Wow, 8+4 is so great. This is a glowing recommendation. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <h3 style="text-align: center;">Marcus Christian '16</h3>
+          <p>Wow, 8+4 is so great. This is a glowing recommendation. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh. asdlfkjaslf jasd;f asdf .ajlkd j;laksjd;l kajs;dlkf lasd lkasd;l kfjalsdkf j.</p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="img/circle-placeholder.png" alt="Generic placeholder image" width="140" height="140">
-          <h2>Ahmad Greene-Hayes '16</h2>
+          <h3 style="text-align: center;">Ahmad Greene-Hayes '16</h3>
           <p>Another glowing recommendation! Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="img/circle-placeholder.png" alt="Generic placeholder image" width="140" height="140">
-          <h2>Someone else</h2>
+          <h3 style="text-align: center;">Someone else</h3>
           <p>Yet another glowing recommendation! Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
-			<div class="row row-3">
+		<div class="row row-3">
 			<a href="#vote" class="btn btn-circle page-scroll blackButton">
 				<i class="fa fa-angle-double-down animated"></i>
 			</a>
 			<p class="btn-circle-text">Sign up to be reminded to vote</p>
-			</div>
+		</div>
 	</section>
 </template>
 
