@@ -19,13 +19,6 @@ if (Meteor.isClient) {
         $('.navbar').style("background:transparent;");
       }
     },false);
-    // $(window).scroll(function() {
-    //     if($(window).scrollTop() > 0 && document.getElementById("w") < 768) {
-    //         $('.navbar-custom').collapse('hide');
-    //     } else {
-    //         $('.navbar-custom').collapse('show');
-    //     }
-    // });
   });
 
   Template.vote.helpers({
