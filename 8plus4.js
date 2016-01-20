@@ -6,9 +6,26 @@ var addUpvoteButton = function (value) {
 
 if (Meteor.isClient) {
 
-  $(document).ready(function(){
-    document.body.addEventListener('touchstart', function(e){ e.preventDefault(); });
+  $(document).bind('touchmove', function(e) {
+    e.preventDefault();
+  });
 
+  $(document).ready(function(){
+    window.addEventListener("onTouchMove", function() {
+      if (window.scrollY > 100) {
+        $('.navbar').style("background:#642c6e;");
+      }
+      else {
+        $('.navbar').style("background:transparent;");
+      }
+    },false);
+    // $(window).scroll(function() {
+    //     if($(window).scrollTop() > 0 && document.getElementById("w") < 768) {
+    //         $('.navbar-custom').collapse('hide');
+    //     } else {
+    //         $('.navbar-custom').collapse('show');
+    //     }
+    // });
   });
 
   Template.vote.helpers({
