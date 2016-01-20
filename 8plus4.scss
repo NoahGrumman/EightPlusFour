@@ -180,6 +180,10 @@ a:focus {
 	background-color: #000;
 }
 
+#intro-body {
+	margin-top: 15%;
+}
+
 @media(max-width:767px) {
 	.row-2 {
    		margin-top:200px;
@@ -193,9 +197,12 @@ a:focus {
    	vertical-align: middle;
 }
 .row-3 {
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom:40px;
+    bottom: 3px;
     width: 100%;
+    text-align: center;
 }
 
 .brand-heading {
@@ -233,6 +240,16 @@ a:focus {
 	height: 100%;
 }
 
+#proposal-text {
+	width: 80%;
+	margin: auto;
+	resize: none;
+	overflow-y: scroll;
+	height:80%;
+	vertical-align: middle;
+	border: none;
+}
+
 #endorsements {
 	color: black;
 	background-color: white;
@@ -261,8 +278,7 @@ textarea:focus, input:focus {
     width: 70px;
     height: 70px;
     left: 50%;
-	margin-left: -35px;
-    margin-top: 15px;
+    margin-top: 0px;
     padding: 7px 16px;
     border: 2px solid #fff;
     border-radius: 100%!important;
@@ -297,6 +313,15 @@ textarea:focus, input:focus {
     -moz-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     -moz-animation-timing-function: linear;
+}
+
+.btn-circle-text {
+	bottom: 10px;
+	font-size:10pt;
+	border: none;
+	vertical-align: bottom;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
 @-webkit-keyframes pulse {    
@@ -335,12 +360,23 @@ textarea:focus, input:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 50px;
     }
+}
+@media(max-width:766px) {
+    .content-section {
+        padding-top: 50px;
+    }
+}
 
-    .about-section {
-        padding: 100px 0;
-    }
+
+.carousel, .item, .active{
+	height:100%;
+	background-color: #777;
+}
+
+.carousel-inner {
+	height:100%;
 }
 
 .blackButton {

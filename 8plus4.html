@@ -60,50 +60,86 @@
 
 <template name="intro">
 	<section id="intro" class="container content-section text-center">
-		<div class="row row-1"></div>
-		<div class="row row-2">
-			<div class="col-lg-10 col-lg-offset-1">
-				<h1 class="brand-heading">Fix the Honor Code</h1>
-				<p class="intro-text-1">The Williams College Honor Code is broken.</p><p class="intro-text-2"><strong>Eight + Four</strong> is a referendum that would help fix it.</p>
-<!-- 				<ul class="intro-list hidden-sm">
-				<li>Read the proposal</li>
-				<li>See who's endorsed it</li>
-				<li>Sign the petition and get a reminder when it's time to vote</li>
-				</ul> -->
+		<div id="intro-body">
+			<div class="row row-2">
+				<div class="col-lg-10 col-lg-offset-1">
+					<h1 class="brand-heading">Fix the Honor Code</h1>
+					<p class="intro-text-1">The Williams College Honor Code is broken.</p><p class="intro-text-2"><strong>Eight + Four</strong> is a referendum that would help fix it.</p>
+				</div>
 			</div>
-		</div>
-		<div class="row row-3">
-			<a href="#proposal" class="btn btn-circle page-scroll">
-				<i class="fa fa-angle-double-down animated"></i>
-			</a>
+			<div class="row row-3">
+				<a href="#proposal" class="btn btn-circle page-scroll">
+					<i class="fa fa-angle-double-down animated"></i>
+				</a>
+				<p class="btn-circle-text">Read the proposal</p>
+				
+			</div>
 		</div>
 	</section>
 </template>
 
 <template name="proposal">
-	<section id="proposal" class="container content-section text-center">
-		<div class="row row-1"></div>
-		<div class="row row-2">
+	<section id="proposal" class="content-section">
+				<!-- <div class="row row-1"></div> -->
+				<!-- <div id="proposal-text">LET IT BE RESOLVED that upon approval of this amendment by two-thirds of voters, with at least two-thirds of the student body voting, and ratification by the Faculty, the Williams Statement of Academic Honesty is revised such that paragraphs three and four read as follows:
 
-				<div class="col-xs-6">
+				“Students and faculty are to report violations and alleged violations of this agreement. Such reports are to be submitted to the Student or and Faculty Chair of the Honor Committee. This Honor Committee shall serve as a jury of peers consisting of eight elected student members and four rotating student members. For each hearing, one four rotating members – one from each class year – shall be randomly called upon to join the eight elected student members in the hearing as voting members. This Honor Committee is responsible for determining the guilt or innocence of the accused person or persons and for recommending appropriate sanction(s) to the Dean of the College. A group of faculty members to be designated by the Faculty Steering Committee will attend hearings with this Honor Committee in an advisory capacity. 
 
-					<h2 class="sub-header">Popular</h2>
-
-				</div>
-				<div class="col-xs-6">
-					<h2 class="sub-header">Recent</h2>
-
-				</div>
-			<a href="#endorsements" class="btn btn-circle page-scroll blackButton hidden-xs">
-				<i class="fa fa-angle-double-down animated"></i>
-			</a>
-		</div>
+				A quorum of at least three-quarters of elected student members on campus and two-quarters two of rotating student members shall be required for the Honor Committee to meet. Both elected and rotating student members shall sign a confidentiality agreement to protect the identity and privacy of any party involved in the hearing. Violation of this confidentiality agreement shall be considered a violation of this Statement of Academic Honesty. Rotating student members, like elected student members, retain the right of recusal before signing this agreement. Rotating members who invoke this right will be prioritized for the subsequent Honor Committee hearing. Students who have been sanctioned by the Honor and Discipline Committee are not eligible to serve as rotating members. A vote of guilty by at least three-quarters of student members present is necessary to formally recommend a sanction to the Dean of the College. A recommendation for dismissal must be made by unanimous vote of those present and shall be carried out only with the assent of the President of the College.
+				-->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <!-- <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide"> -->
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <!-- <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide"> -->
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+         <!--  <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide"> -->
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
 	</section>
 </template>
 
 <template name="endorsements">
 	<section id="endorsements" class="container content-section text-center">
-		<div class="row">
 			<div class="container">
 				<div class="col-xs-6">
 
@@ -118,30 +154,25 @@
 			<div class="container">
 
 			</div>
-			<a href="#vote" class="btn btn-circle page-scroll blackButton hidden-xs">
+			<div class="row row-3">
+			<a href="#vote" class="btn btn-circle page-scroll blackButton">
 				<i class="fa fa-angle-double-down animated"></i>
 			</a>
-		</div>
+			<p class="btn-circle-text">Sign up to be reminded to vote</p>
+			</div>
 	</section>
 </template>
 
 <template name="vote">
-	<section id="vote" class="content-section text-center">
-		<div class="about-section">
-			<div class="container">
-				<div class="col-lg-8 col-lg-offset-2">
-				<a href="#endorsements" class="btn btn-circle page-scroll blackButton hidden-xs">
-						<i class="fa fa-angle-double-up animated"></i>
-				</a>
-					<h2>About</h2>
-					<p>This is where stuff about it would go</p>
-					<a href="http://williamsrecord.com/" target="_blank" class="btn btn-default btn-lg">Read this</a>
-					<form class="new-question">
-					<input type="text" name="text" placeholder="I'd like to know about ..." />
-				</form>
-				</div>
-			</div>
-		</div>
+	<section id="vote" class="content-section">
+
+		<div class="container">
+		<div class="jumbotron">
+		    <h1>Hello, world!</h1>
+ 				<p>...</p>
+  				<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+		  </div>
+		  </div>
 	</section>
 </template>
 
