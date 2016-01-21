@@ -130,6 +130,10 @@ a:focus {
     color: #fff;
 }
 
+.navbar-custom .nav li.active {
+    background-color: purple;
+}
+
 @media(min-width:768px) {
     .navbar-custom {
         padding: 20px 0;
@@ -145,7 +149,7 @@ a:focus {
         padding: 0;
         padding-bottom: 0px;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: '#642c6e';
+        background: #642c6e;
     }
 
 }
@@ -165,7 +169,7 @@ a:focus {
         padding: 0;
         padding-bottom: 0px;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: '#642c6e';
+        background: #642c6e;
     }
 
 }
@@ -236,7 +240,7 @@ a:focus {
 }
 
 #vote {
-	color: '#642c6e';
+	color: #642c6e;
 	background: url(../img/vote-bg-edited.png) no-repeat bottom center scroll;
 	width: 100%;
 	height: 100%;
@@ -449,19 +453,19 @@ textarea:focus, input:focus {
 }
 
 .btn-default, .btn-primary {
-    border: 1px solid '#642c6e';
+    border: 1px solid #642c6e;
     color: white;
-    background-color: '#642c6e';
+    background-color: #642c6e;
 }
 
 .btn-default:hover,
 .btn-default:focus,
 .btn-primary:hover,
 .btn-primary:focus  {
-    border: 1px solid '#642c6e';
-    outline: '#642c6e';
-    color: '#642c6e';
-    text-color: '#642c6e';
+    border: 1px solid #642c6e;
+    outline: #642c6e;
+    color: #642c6e;
+    text-color: #642c6e;
     background-color: white;
 }
 

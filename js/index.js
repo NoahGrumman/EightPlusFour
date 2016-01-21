@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  window.scrollTo(0,$("#intro").offset().top);
+
   window.addEventListener("onTouchMove", function() {
     if (window.scrollY > 100) {
       $('.navbar').style("background:#642c6e;");
