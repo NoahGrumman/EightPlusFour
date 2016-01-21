@@ -256,6 +256,13 @@ a:focus {
     text-align: center;
 }
 
+.bottomBtnDiv .btn-default {
+    position: absolute;
+    bottom:110px;
+    left:50%;
+    margin-left:-90px;
+}
+
 .blackText {
     color: black;
 }
@@ -421,8 +428,8 @@ textarea:focus, input:focus {
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid white;
-    outline: 0;
+    border: 1px solid $purplecolor;
+    outline: $purplecolor;
     color: $purplecolor;
     text-color: $purplecolor;
     background-color: white;

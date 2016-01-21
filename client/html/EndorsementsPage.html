@@ -14,11 +14,36 @@
           <p>Yet another glowing recommendation! Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
-		<div class="bottomBtnDiv">
-			<a href="#vote" class="btn btn-circle page-scroll blackButton">
-				<i class="fa fa-angle-double-down animated"></i>
-			</a>
-			<p class="btn-circle-text">Sign up to be reminded to vote</p>
-		</div>
+
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Endorse the Eight + Four plan</h4>
+            </div>
+            <div class="modal-body">
+              <form class="new-name">
+                <input type="text" name="name" placeholder="Name ..." />
+                <input type="text" name="unix" placeholder="Unix ..." />
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+  		<div class="bottomBtnDiv">
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Add my endorsement</button>
+  			<a href="#vote" class="btn btn-circle page-scroll blackButton">
+  				<i class="fa fa-angle-double-down animated"></i>
+  			</a>
+  			<p class="btn-circle-text">Sign up to be reminded to vote</p>
+  		</div>
 	</section>
 </template>
