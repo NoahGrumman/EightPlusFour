@@ -1,9 +1,5 @@
 Questions = new Mongo.Collection("questions");
 
-var addUpvoteButton = function (value) {
-    return new Spacebars.SafeString(value + " " + '<button class="upvoteButton"><span style="color: black">&#x25B2;</span></button>');
-};
-
 if (Meteor.isClient) {
 
   $(document).bind('touchmove', function(e) {
