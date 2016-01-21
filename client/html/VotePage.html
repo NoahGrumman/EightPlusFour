@@ -5,8 +5,26 @@
 		<div class="jumbotron">
 		    <h1>Hello, world!</h1>
  				<p>...</p>
-  				<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+  				<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Sign the petition</button>
 		  </div>
-		  </div>
+		</div>
+		<div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Endorse the Eight + Four plan</h4>
+            </div>
+            <div class="modal-body">
+              {{> quickForm collection="Endorsements" id="insertEndorsementForm" type="insert"}}
+            </div>
+          </div>
+
+          
+
+        </div>
+      </div>
 	</section>
 </template>

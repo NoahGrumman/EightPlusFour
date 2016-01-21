@@ -15,42 +15,12 @@
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
-      <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Endorse the Eight + Four plan</h4>
-            </div>
-            <div class="modal-body">
-              {{> quickForm collection="Endorsements" id="insertEndorsementForm" type="insert"}}
-            </div>
-          </div>
-
-        </div>
-      </div>
-
   		<div class="bottomBtnDiv">
-        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Add my endorsement</button>
+        <a class="btn btn-default" href="http://goo.gl/forms/RQ7LOkz8au" target="_blank">Sign the petition</a>
   			<a href="#vote" class="btn btn-circle page-scroll blackButton">
   				<i class="fa fa-angle-double-down animated"></i>
   			</a>
-  			<p class="btn-circle-text">Sign up to be reminded to vote</p>
+  			<p class="btn-circle-text">Get a reminder to vote</p>
   		</div>
 	</section>
-</template>
-
-<template name="insertEndorsementForm">
-  {{#autoForm collection="Endorsements" id="insertBookForm" type="insert"}}
-    <fieldset>
-      <label>Name</label>
-      {{> afQuickField name='name' placeholder='Name'}}
-      {{> afQuickField name='author'}}
-      {{> afQuickField name='summary' rows=6}}
-      {{> afQuickField name='copies'}}
-      {{> afQuickField name='lastCheckedOut'}}
-    </fieldset>
-  {{/autoForm}}
 </template>
