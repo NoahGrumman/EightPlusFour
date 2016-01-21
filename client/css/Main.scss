@@ -249,11 +249,19 @@ a:focus {
 
 .bottomBtnDiv {
     position:absolute;
-    bottom: 10px;
-    vertical-align: bottom;
-    left: 50%;
-    margin-left: -35px;
+    bottom: 0px;
+    height: 100px;
     width:100%;
+    left:0;
+    text-align: center;
+}
+
+.blackText {
+    color: black;
+}
+
+.whiteText {
+    color: white;
 }
 
 #endorsements {
@@ -326,7 +334,6 @@ textarea:focus, input:focus {
 .btn-circle-text {
 	bottom: 10px;
 	font-size:10pt;
-	border: none;
 	vertical-align: bottom;
 	margin-bottom: 0;
 	padding-bottom: 0;
@@ -394,7 +401,6 @@ textarea:focus, input:focus {
 .blackButton {
 	color: black;
 	border: 2px solid black;
-
 }
 
 .btn {
