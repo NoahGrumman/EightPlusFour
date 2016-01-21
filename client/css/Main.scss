@@ -420,14 +420,16 @@ textarea:focus, input:focus {
     transition: all .3s ease-in-out;
 }
 
-.btn-default {
+.btn-default, .btn-primary {
     border: 1px solid $purplecolor;
     color: white;
     background-color: $purplecolor;
 }
 
 .btn-default:hover,
-.btn-default:focus {
+.btn-default:focus,
+.btn-primary:hover,
+.btn-primary:focus  {
     border: 1px solid $purplecolor;
     outline: $purplecolor;
     color: $purplecolor;

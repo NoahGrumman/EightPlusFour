@@ -25,13 +25,7 @@
               <h4 class="modal-title">Endorse the Eight + Four plan</h4>
             </div>
             <div class="modal-body">
-              <form class="new-name">
-                <input type="text" name="name" placeholder="Name ..." />
-                <input type="text" name="unix" placeholder="Unix ..." />
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+              {{> quickForm collection="Endorsements" id="insertEndorsementForm" type="insert"}}
             </div>
           </div>
 
@@ -46,4 +40,17 @@
   			<p class="btn-circle-text">Sign up to be reminded to vote</p>
   		</div>
 	</section>
+</template>
+
+<template name="insertEndorsementForm">
+  {{#autoForm collection="Endorsements" id="insertBookForm" type="insert"}}
+    <fieldset>
+      <label>Name</label>
+      {{> afQuickField name='name' placeholder='Name'}}
+      {{> afQuickField name='author'}}
+      {{> afQuickField name='summary' rows=6}}
+      {{> afQuickField name='copies'}}
+      {{> afQuickField name='lastCheckedOut'}}
+    </fieldset>
+  {{/autoForm}}
 </template>

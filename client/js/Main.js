@@ -1,4 +1,21 @@
-Questions = new Mongo.Collection("questions");
+Endorsements = new Mongo.Collection("endorsements");
+
+Endorsements.attachSchema(new SimpleSchema({
+  name: {
+    type: String,
+    label: "Name",
+    max: 200
+  },
+  unix: {
+    type: String,
+    label: "Unix",
+    max:6
+  },
+  text: {
+    type: String,
+    label: "Endorsement"
+  }
+}));
 
 if (Meteor.isClient) {
 
