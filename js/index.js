@@ -35,4 +35,16 @@ $(document).ready(function(){
     }
   });
 
+  $("#submitEmail").on("click", function() {
+    message = $("#contactform").serialize();
+    $.ajax({
+        url: "//formspree.io/eight.plus.four.campaign@gmail.com", 
+        method: "POST",
+        data: {message: message},
+        dataType: "json"
+    });
+    $('#myModal').show();
+    return false;
+});
+
 });

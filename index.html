@@ -175,10 +175,12 @@
 			<div class="jumbotron">
 				<h1 class="brand-heading">Vote on February __, 2016</h1>
 				<p class="intro-text-1">The Williams Academic Honor Code is broken.</p><p class="intro-text-2"><strong>Eight + Four</strong> is a referendum that would help fix it.</p>
-				<form id="contactform" action="//formspree.io/eight.plus.four.campaign@gmail.com" method="POST">
+
+				<form id="contactform" method="POST">
 				    <input type="text" name="name" placeholder="Name">
-				    <input type="email" name="_replyto" placeholder="Williams email">
-				    <input type="submit" class="btn btn-default" data-toggle="modal" data-target="#myModal" value="Send me a reminder">
+				    <input type="text" name="email" placeholder="Williams email">
+				    <input type="hidden" name="_next" value="www.8plus4.com#thanks" />
+				    <input type="submit" id="submitEmail" class="btn btn-default" data-toggle="modal" data-target="#myModal" value="Send me a reminder">
 				</form>
 					  
 			</div>
