@@ -40,12 +40,12 @@ $(document).ready(function(){
 });
 
 $("#submitEmail").on("click", function() {
-    message = $("#contactform").serialize();
     name = $("#nameField").serialize();
+    email = $("#emailField").serialize();
     $.ajax({
         url: "//formspree.io/eight.plus.four.campaign@gmail.com", 
         method: "POST",
-        data: {name: name},
+        data: {name: name, email: email},
         dataType: "json"
     });
     $('#myModal').modal();
