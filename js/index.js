@@ -2,6 +2,8 @@ $(document).ready(function(){
 
   window.scrollTo(0,$("#intro").offset().top);
 
+  $('#myModal').hide();
+
   window.addEventListener("onTouchMove", function() {
     if (window.scrollY > 100) {
       $('.navbar').style("background:#642c6e;");
@@ -35,16 +37,17 @@ $(document).ready(function(){
     }
   });
 
-  $("#submitEmail").on("click", function() {
+});
+
+$("#submitEmail").on("click", function() {
     message = $("#contactform").serialize();
+    name = $("#nameField").serialize();
     $.ajax({
         url: "//formspree.io/eight.plus.four.campaign@gmail.com", 
         method: "POST",
-        data: {message: message},
+        data: {name: name},
         dataType: "json"
     });
-    $('#myModal').show();
+    $('#myModal').modal();
     return false;
-});
-
 });
