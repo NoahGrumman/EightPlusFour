@@ -42,12 +42,14 @@ $(document).ready(function(){
 $("#submitEmail").on("click", function() {
     name = $("#nameField").serialize();
     email = $("#emailField").serialize();
-    $.ajax({
-        url: "//formspree.io/eight.plus.four.campaign@gmail.com", 
-        method: "POST",
-        data: {name: name, email: email},
-        dataType: "json"
-    });
-    $('#myModal').modal();
+    if (name !== "name=" && email !== "email=") {
+      $.ajax({
+          url: "//formspree.io/eight.plus.four.campaign@gmail.com", 
+          method: "POST",
+          data: {name: name, email: email},
+          dataType: "json"
+      });
+      $('#myModal').modal();
+    }
     return false;
 });
