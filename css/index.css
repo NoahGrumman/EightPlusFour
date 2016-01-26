@@ -184,15 +184,24 @@ a:focus {
 }
 
 #intro-body {
-	margin-top: 15%;
+	/*margin-top: 15%;*/
+    /*width: 100%;*/
+    display: table;
     width: 100%;
+    height: 100%;
 }
 
-@media(max-width:767px) {
+#intro-container {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*@media(max-width:767px) {
 	#intro-body {
    		margin-top:200px;
 	}
-}
+}*/
 
 .brand-heading {
 	font-size: 6vw;
